@@ -11,6 +11,7 @@ app.set('view engine', 'ejs')
 
 app.get('/', (req, res) => {
   console.log(`Rendering 'pages/index' for route '/'`)
+  
   res.render('pages/index')
 })
 
@@ -18,6 +19,7 @@ const server = app.listen(port, () => {
   console.log(`Listening on ${port}`)
 })
 
+// 
 // The number of seconds an idle Keep-Alive connection is kept open. This should be greater than the Heroku Router's
 // Keep-Alive idle timeout of 90 seconds:
 // - to ensure that the closing of idle connections is always initiated by the router and not the Node.js server
